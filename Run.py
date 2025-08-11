@@ -1,10 +1,11 @@
-import PythonCompiler
+import CpythonEncoder
 
-print("Available functions/objects in PythonCompiler:")
-print(dir(PythonCompiler))
+print("Available functions/objects in CpythonEncoder:")
+print(dir(CpythonEncoder))
 
-if hasattr(PythonCompiler, "main"):
-    PythonCompiler.main()
-
-elif hasattr(PythonCompiler, "start"):
-    PythonCompiler.start()
+if hasattr(CpythonEncoder, "main"):
+    CpythonEncoder.main()
+elif hasattr(CpythonEncoder, "start"):
+    CpythonEncoder.start()
+else:
+    print("No main/start function found.")
